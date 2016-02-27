@@ -1,0 +1,108 @@
+/*
+ * CSS pour le panneau article
+ */
+
+/* Panneau texte *************************************************************/
+
+/* Couleur de la sélection en mode historique (détrompeur avec mode édition) */
+div.texte_panneau_versions  p::selection,
+div.texte_panneau_versions  h1::selection,
+div.texte_panneau_versions  h2::selection,
+div.texte_panneau_versions  h3::selection,
+div.texte_panneau_versions  sub::selection,
+div.texte_panneau_versions  sup::selection,
+div.texte_panneau_versions  em::selection,
+div.texte_panneau_versions  strong::selection,
+div.texte_panneau_versions  u::selection,
+div.texte_panneau_versions  span::selection  {background:#eef;}
+div.texte_panneau_versions  p::-moz-selection,
+div.texte_panneau_versions  h1::-moz-selection,
+div.texte_panneau_versions  h2::-moz-selection,
+div.texte_panneau_versions  h3::-moz-selection,
+div.texte_panneau_versions  sub::-moz-selection,
+div.texte_panneau_versions  sup::-moz-selection,
+div.texte_panneau_versions  em::-moz-selection,
+div.texte_panneau_versions  strong::-moz-selection,
+div.texte_panneau_versions  u::-moz-selection,
+div.texte_panneau_versions  span::-moz-selection  {background:#eef;}
+
+/* Pied d'article (laisse un peu d'espace sous le dernier paragraphe */
+div.pied_article_edition{height:50px;}
+div.pied_article_historique{height:85px;}
+
+/* Barre d'outils : partie édition */
+div#barre_outils_article{background:#004;}
+p.p_outil_info_article{font-size:100%;}
+p.p_outil_info_article_edition{float:left;padding:3px 0 4px 0;}
+p.p_outil_info_article_version{float:right!important;padding:8px 0;}
+span.s_numero_version_edition{margin:0 12px 0 6px;}
+a.icone_editer {margin-left:10px!important;}
+a.icone_annoter {margin-left:15px!important;}
+button.bouton_creer_version{margin:0 8px 0 0;}
+
+/* Barre d'outils : partie versions */
+div#barre_outils_versions{background:#004;}
+p.p_outil_info_version{float:left;padding:6px;font-size:100%;}
+span.s_label_outil_version{margin-left:3px;}
+a#a_info_version_moins{margin-left:12px;font-size:120%;}
+a#a_info_version_plus{margin-left:3px;font-size:120%;}
+span.s_numero_version_info{display:inline-block;width:65px;margin:0 6px;background:#fff;color:#000;border:1px solid #888;text-align:center;font-size:100%;padding:3px 2px 1px 2px;}
+span.s_icone_calendrier_info{margin:0 8px 0 20px;font-size:120%;}
+span.s_icone_horloge_info{margin:0 8px 0 10px;font-size:120%;}
+span.s_icone_pseudo_info{margin:0 8px 0 12px;font-size:120%;}
+p.p_outil_bouton_filtre{float:right;padding:3px 6px;font-size:100%;}
+a.icone_filtrer{margin:0 6px 0 0!important;padding:0!important;}
+
+/* Barre d'outils : partie filtres */
+div#barre_outils_filtres{background:#444;}
+p.p_outil_info_filtres{padding:6px;font-size:100%;}
+span.icone_filtrer_editeur{margin:0 6px 0 3px;font-size:120%;}
+span.icone_filtrer_annotation{margin:0 6px 0 3px;font-size:120%;}
+span.icone_filtrer_inactive{color:#888;}
+span.icone_filtrer_commentaire{margin:0 6px 0 3px;font-size:120%;}
+select.select_filtre_annotateur{margin:0 9px;}
+select.select_filtre_commentateur{margin:0 9px;}
+input.checkbox_filtrer_annotations{margin:0 6px 0 28px;vertical-align:middle;}
+input.checkbox_filtrer_commentaires{margin:0 6px 0 28px;vertical-align:middle;}
+
+/* Div contenant les paragraphes */
+div.texte_panneau{padding:5px 0;height:-moz-calc(100% - 40px);height:-webkit-calc(100% - 40px);height:-o-calc(100% - 40px);height:calc(100% - 40px);width:100%;overflow-x:hidden;overflow-y:auto;z-index:1;}
+div.p_box_ferme{background:#ccc;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+div.p_box_ouvert{background:transparent;}
+div.p_box_ferme{width:100%;position:relative;}
+div.p_box_ferme, div.p_box_ouvert{
+-webkit-transition: background 0.5s ease;
+-moz-transition: background 0.5s ease;
+-ms-transition: background 0.5s ease;
+-o-transition: background 0.5s ease;
+transition: background 0.5s ease;
+}
+p.texte_filtre{font-size:120%!important;font-weight:bold;font-style:italic;color:#999;}
+
+/* Div encadrant les paragraphes d'un même verrou */
+div.verrou_wrapper{padding:0;margin:0;overflow:hidden;}
+
+/* Panneau contenant les infos pour les paragraphes déverrouillés */
+p.p_box_info_menu{position:absolute;top:0;left:0;width:0;line-height:1!important;font-weight:bold;display:none;text-align:left!important;}
+p.p_box_info_menu a {font-size:24px!important;color:#000;vertical-align:middle;margin-left:15px;text-decoration:none;}
+p.p_box_info_menu a:hover {color:#444!important;}
+
+/* Panneau contenant les infos pour les paragraphes verrouillés */
+p.p_box_info_verrou{position:absolute;top:0;left:0;width:0;line-height:1!important;font-weight:bold;display:none;text-align:left!important;}
+p.p_box_info_verrou span.info_icone_verrou{font-size:26px!important;color:#800;vertical-align:middle;margin-left:15px;}
+p.p_box_info_verrou span.info_pseudo_verrouilleur{font-size:20px!important;color:#800;vertical-align:middle;margin-left:10px;}
+
+/* Zone de saisie des paragraphes */
+div.editeur_box{width:100%;overflow:hidden;}
+div.editeur_barre_outils{width:100%;background:#800;color:#fff;padding:4px 0;overflow:hidden;}
+div.editeur_barre_outils p.p_outils_annotation{float:left;margin:0 0 0 8px;padding:0;}
+div.editeur_barre_outils button.b_bouton_validation{display:inline-block;float:right;margin:0 5px!important;font-size:12px;font-weight:bold;margin:0 8px 0 0;padding:2px 9px;cursor:pointer;}
+div.editeur_barre_outils button.b_bouton_annulation{display:inline-block;float:right;margin:2px 8px!important;font-size:11px;margin:0 8px 0 0;padding:1px 6px;cursor:pointer;}
+/* div.editeur_texte{text-align:justify;overflow:hidden;outline:none!important;border:none!important;background:#eee;} */
+textarea.editeur_texte{font-family:Serif;width:-moz-calc(100% - 12px);width:-webkit-calc(100% - 12px);width:-o-calc(100% - 12px);width:calc(100% - 12px);max-width:-moz-calc(100% - 12px);max-width:-webkit-calc(100% - 12px);max-width:-o-calc(100% - 12px);max-width:calc(100% - 12px);text-align:justify;font-size:16px;line-height:1.5;padding:2px 6px 0 6px!important;overflow:hidden;outline:none!important;border:none!important;}
+
+/* Personnalisation de CKEditor */
+#cke_bottom_detail,.cke_bottom{display:none!important;}
+span.cke_combo__styles .cke_combo_inlinelabel {width:10em!important;}
+
+/* Fin ***********************************************************************/

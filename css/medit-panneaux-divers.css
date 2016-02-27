@@ -1,0 +1,77 @@
+/*
+ * CSS pour les panneaux infos, sommaire
+ */
+
+/* Panneau infos *************************************************************/
+div.d_barre_outils_info{width:100%;overflow:hidden;margin:0 auto;padding:0;}
+p.p_outil_info{float:left;text-align:left;padding:3px 6px;vertical-align:middle;line-height:1!important;color:#fff;}
+p.p_outil_info a, p.p_outil_info span, p.p_outil_info img  {vertical-align:middle;}
+p.p_outil_info a{color:#fff;text-decoration:none;outline:none;}
+p.p_outil_info a:hover{color:#aaa;}
+
+/* Partie mode */
+p.p_outil_info_mode{float:left;font-size:100%;}
+p.p_outil_info_mode img#logo_medit  {margin-right:25px;padding:0;}
+p.p_outil_info_mode input {vertical-align:middle;width:16px;height:16px;}
+input#i_radio_edition{margin-left:20px;margin-right:5px;}
+input#i_radio_historique{margin-left:20px;margin-right:5px;}
+span.s_label_radio_disabled{color:#ddd;font-style:italic;}
+
+/* Partie connexion */
+p.p_outil_info_connexion{float:right;font-size:100%;}
+a.a_bouton_connexion{margin:0 8px 0 12px;font-size:120%;}
+span.s_bouton_configuration, a.s_bouton_configuration{font-weight:normal;padding:5px 8px 5px 16px;font-size:140%;color:#c00!important;}
+a.s_bouton_configuration:hover{color:#aaa!important;}
+
+/* Panneau journal ************************************************************/
+
+/* Panneau */
+div#zone_panneau_journal{overflow-y:auto;max-height:100%;}
+p.evenement_journal{font-size:14px;padding:2px 0 2px 4px;}
+p.evenement_journal span.horodatage_journal {font-weight:bold;color:#555;}
+p.evenement_journal span.icone_journal {font-size:120%;color:#800;vertical-align:bottom;}
+
+/* Journal : barre d'outils */
+div#barre_outils_journal{background:#400;}
+p.p_outil_journal_boutons{padding:8px 5px 4px 6px;font-size:100%;float:left;}
+p.p_outil_journal_boutons span.s_outil_titre_mots_cles{vertical-align:middle;}
+p.p_outil_journal_poignee{padding:1px 0 6px 0;font-size:100%;float:right;}
+span.s_icone_dimension_journal{font-size:120%;font-weight:normal;margin-left:24px;vertical-align:middle;}
+span.s_label_article_journal{margin-left:24px;vertical-align:middle;}
+select#s_outil_dimension_journal{margin-left:8px;vertical-align:middle;}
+input#i_outil_case_article_journal{margin-left:8px;vertical-align:middle;}
+
+/* Journal : événements */
+div.cadre_journal{padding:3px 5px;margin:0}
+
+/* Panneau sommaire **********************************************************/
+
+/* Sommaire : barre d'outils */
+div#barre_outils_sommaire{background:#044;}
+p.p_outil_sommaire_boutons{padding:8px 5px 6px 6px;font-size:100%;float:left;}
+p.p_outil_sommaire_boutons span.s_outil_titre_sommaire{vertical-align:middle;}
+p.p_outil_sommaire_poignee{padding:1px 0 6px 0;font-size:100%;float:right;}
+
+/* Sommaire : liens vers titres de l'article */
+div.cadre_sommaire{padding:8px 5px;margin:0}
+p.entree_sommaire{font-size:14px;margin:5px 0 0 0;}
+p.entree_sommaire a.lien_entree_sommaire{font-weight:bold;color:#555;}
+p.entree_sommaire a.lien_entree_sommaire:hover{color:#aaa;}
+p.entree_sommaire_1{margin-left:0;}
+p.entree_sommaire_2{margin-left:8px;}
+p.entree_sommaire_3{margin-left:16px;}
+p.entree_sommaire_4{margin-left:24px;}
+
+
+/* Panneau mots-clés **********************************************************/
+
+/* Mots-clés : barre d'outils */
+div#barre_outils_mots_cles{background:#404;}
+p.p_outil_mots_cles_boutons{padding:8px 5px 6px 6px;font-size:100%;float:left;}
+p.p_outil_mots_cles_boutons span.s_outil_titre_mots_cles{vertical-align:middle;}
+p.p_outil_mots_cles_poignee{padding:1px 0 6px 0;font-size:100%;float:right;}
+
+/* Mots-clés : nuage */
+div.cadre_mots_cles{padding:8px 5px;margin:0}
+
+/* Fin ***********************************************************************/

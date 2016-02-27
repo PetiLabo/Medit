@@ -1,0 +1,50 @@
+/*
+ * CSS général pour medit
+ */
+ 
+/* Panneaux UI Layout */
+/* div.ui-layout-pane{overflow:hidden!important;} */
+div.ui-layout-pane-center{overflow:hidden!important;}
+div.ui-layout-pane-south, div.ui-layout-pane-east, div.ui-layout-pane-west, div.ui-layout-pane-center {padding:0!important;}
+div.ui-layout-pane-north{padding:5px 0 0 0!important;background:#000!important;color:#fff;overflow:hidden!important;}
+
+/* Barres d'outils */
+div.barre_outils_panneau{margin:0;padding:0;height:auto;width:100%;overflow:hidden;z-index:2;vertical-align:middle;}
+div.barre_outils_panneau a {margin-left:5px;margin-top:3px;font-size:24px;color:#fff;text-decoration:none;vertical-align:middle;}
+div.barre_outils_panneau a:hover{color:#c00!important;}
+
+/* Widgets */
+div.medit_widget{margin:0;padding:0;}
+a.icone_poignee_deplacement{font-size:16px!important;font-weight:normal!important;padding:4px 6px 4px 0;}
+a.icone_poignee_deplacement:hover{cursor:move;}
+.drop_zone {width:99%;height:35px;background:#ffb;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;border:1px dotted #666;margin:2px auto;}
+
+button{cursor:pointer;}
+
+/* Panneau login *************************************************************/
+div#fenetre_login {position:relative;background:#fff;padding:20px;width:auto;max-width:400px;margin:0 auto;}
+p.p_titre_login{font-size:32px;font-weight:bold;color:#333;text-align:center;vertical-align:middle;line-height:1!important;margin:5px auto 10px auto;}
+p.p_erreur_login{font-size:16px;text-align:center;font-weight:bold;margin:0 auto;color:#a00;}
+form.f_login{width:320px;margin:5px auto 10px auto;text-align:center;}
+p.p_champ_info{margin:15px auto!important;text-align:left;}
+p.p_champ_info label{display:inline-block;width:24px;height:24px;font-size:24px;padding:5px;vertical-align:middle;background:#800;color:#fff;border:1px solid #800;text-align:center;}
+p.p_champ_info input{display:inline-block;width:270px;height:24px;font-size:16px;padding:5px;vertical-align:middle;background:#fff;color:#000;border-top:1px solid #888!important;border-right:1px solid #888!important;border-bottom:1px solid #888!important;border-left:0!important;outline:none!important;}
+p.p_btn_login{width:auto;margin:30px auto 15px auto;text-align:center;}
+p.p_btn_login input {border:0;color:#fff;font-size:18px;background:#222;padding:10px 20px;cursor:pointer;-webkit-appearance:none;}
+p.p_btn_login input:hover,p.p_btn_login input:focus{background:#444;}
+
+/* Animation de la fenêtre de login sur mauvaise identification */
+div#fenetre_login {-webkit-animation-duration: 0.5s;animation-duration: 0.5s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 50%, 90% {-webkit-transform: translateX(-10px);} 
+    30%, 70% {-webkit-transform: translateX(10px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 50%, 90% {transform: translateX(-10px);} 
+    30%, 70% {transform: translateX(10px);} 
+}
+.shake {-webkit-animation-name: shake;animation-name: shake;}
+
+/* Fin ***********************************************************************/

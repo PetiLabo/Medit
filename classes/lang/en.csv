@@ -1,0 +1,121 @@
+// Messages généraux
+retour_page_accueil;Back to home page
+valider;OK
+annuler;Cancel
+ok;OK
+
+// Panneau infos ////////////////////////////////////////////////////
+
+// Barre d'outils
+label_mode_edition;Edition
+label_mode_historique;History
+se_deconnecter;Sign out
+se_connecter;Sign in
+deconnecte;Unlogged
+configuration;Configuration
+
+// Erreurs
+erreur_mode_non_autorise;You're not allowed to access this mode !
+
+// Panneau journal //////////////////////////////////////////////////
+titre_journal;Log
+article_uniquement;This article only
+evenement_connexion;Signed in
+evenement_deconnexion;Signed out
+evenement_verrouillage_paragraphe;Locked paragraphs
+evenement_deverrouillage_paragraphe;Unlocked paragraphs
+evenement_edition_paragraphe;Edited paragraphs
+evenement_annotation_paragraphe;Annotated paragraphs
+evenement_creation_fil_discussion;Created a new thread
+evenement_reponse_commentaire;Replied to a comment
+
+// Panneau mots clés ////////////////////////////////////////////////
+titre_mots_cles;Keywords
+
+// Panneau sommaire /////////////////////////////////////////////////
+titre_sommaire;Summary
+atteindre_entree_sommaire;Reach this part of the article
+
+// Panneau commentaires /////////////////////////////////////////////
+titre_commentaires;Comments
+atteindre_zone_discussion;Reach this part of the article
+repondre_commentaire;Reply to this comment.
+basculer_fil_discussion;Toggle thread display
+basculer_indentation;Toggle thread indentation
+alerte_fil_distance_nulle;A thread already exists for this part of the article.
+alerte_fil_distance_negative;A thread already covers a part of the selection.
+alerte_fil_distance_positive;Some paragraphs of the selection are already discussed in a thread.
+
+// Messages d'erreur panneau commentaires
+erreur_connexion_insertion_commentaire;Error : Impossible to insert comment when unlogged.
+erreur_liste_a_discuter_vide;Error : No paragraph in selection could be attached to a thread.
+
+// Panneau article //////////////////////////////////////////////////
+pseudo_inconnu;Unknown
+
+// Barre d'outils edition
+editer_texte;Edit article
+commenter_texte;Comment article
+annoter_texte;Annotate article
+creer_nouvelle_version;Create major version
+creer_a_partir_de;from the current minor version
+confirmer_nouvelle_version;Do you confirm the creation of new major version %1 from minor version %2 ?
+
+// Barre d'outils historique
+version;Version
+version_precedente;Previous version
+version_suivante;Next version
+appliquer_filtre_version;Apply filter
+retirer_filtre_version;Remove filter
+
+// Barre d'outils filtres
+tous_les_auteurs;All
+toutes_les_annotations;All
+
+// Zone de saisie dans le panneau article
+titre_edition_contribution;Editing under lock %1
+
+// Messages d'erreur panneau article
+erreur_connexion_edition_paragraphe;Please sign in before editing this paragraph.
+erreur_connexion_validation_contribution;Erreur : Unable to validate contribution under lock %1
+erreur_verrouillage_paragraphe;Error : Unable to lock paragraph %1
+erreur_composition_incoherente;Error : Bad composition for lock %1
+erreur_connexion_creation_version;Error : Impossible to create new version when unlogged.
+
+// Panneau login ////////////////////////////////////////////////////
+titre_connexion;Login form
+votre_identifiant;Your username
+votre_mot_de_passe;Your password
+bouton_submit;Let's go !
+message_erreur_connexion;Oops, incorrect username or password...
+
+// Messages d'erreur BDD ////////////////////////////////////////////
+erreur_connexion_bdd;Error : Unable to connect to database (%1)
+erreur_requete_sans_bdd;Error : Unable to execute SQL query without any connection to database (%1)
+erreur_execution_requete;Error : Execution of SQL query %1 failed : %2
+erreur_ouverture_session;Error : Unable to open session.
+erreur_id_article_incorrect;Error : Wrong article identifier.
+erreur_id_article_manquant;Error : Article identifier is missing.
+erreur_id_article_inexistant;Error : Article %1 was not found in database.
+erreur_no_version_incorrect;Error : Wrong version number.
+erreur_no_version_manquant;Error : Version number is missing.
+erreur_version_article_inexistant;Error : Version %1 of article %2 was not found in database.
+erreur_id_paragraphe_incorrect;Error : Wrong paragraph identifier.
+erreur_id_paragraphe_manquant;Error : Paragraph identifier is missing.
+erreur_id_paragraphe_inexistant;Error : Paragraph %1 was not found in database.
+erreur_id_verrou_incorrect;Error : Wrong lock identifier.
+erreur_id_verrou_manquant;Error : Lock identifier is missing.
+erreur_id_verrou_inexistant;Error : Lock %1 was not found in database.
+erreur_type_verrou_incorrect;Error : Unable to use the requested lock type.
+erreur_id_auteur_incorrect;Error : Wrong author identifier.
+erreur_id_auteur_manquant;Error : Author identifier is missing.
+erreur_id_auteur_inexistant;Error : Author %1 was not found in database.
+erreur_id_profil_incorrect;Error : Wrong profile identifier.
+erreur_id_profil_manquant;Error : Profile identifier is missing.
+erreur_id_profil_inexistant;Error : Profile %1 was not found in database.
+erreur_id_fil_discussion_incorrect;Error : Wrong discussion thread identifier.
+erreur_id_fil_discussion_manquant;Error : Discussion thread identifier is missing.
+erreur_id_fil_discussion_inexistant;Error : Discussion thread %1 was not found in database.
+erreur_id_commentaire_incorrect;Error : Wrong comment identifier.
+erreur_id_commentaire_manquant;Error : Comment identifier is missing.
+erreur_id_commentaire_inexistant;Error : Comment %1 was not found in database.

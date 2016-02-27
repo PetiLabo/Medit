@@ -1,0 +1,56 @@
+/*
+ * CSS pour le panneau commentaires
+ */
+
+div#fenetre_alerte_discussion {position:relative;background:#fff;padding:20px;width:auto;max-width:400px;margin:0 auto;}
+p.p_message_alerte_discussion{font-size:14px;color:#000;line-height:1!important;margin:5px auto 10px auto;}
+
+/* Panneau commentaires *****************************************************/
+div.panneau_commentaires{width:100%;overflow-x:hidden;}
+div#barre_outils_commentaires{background:#040;}
+p.p_outil_commentaire_boutons{padding:1px 0 6px 0;font-size:100%;float:left;}
+p.p_outil_commentaire_titre{padding:8px 5px 6px 6px;font-size:100%;float:left;}
+p.p_outil_sommaire_boutons span.s_outil_titre_sommaire{vertical-align:middle;}
+p.p_outil_commentaire_poignee{padding:1px 0 6px 0;font-size:100%;float:right;}
+a.icone_commenter {margin-left:8px!important;}
+
+/* Fil de discussion *********************************************************/
+div.fil_discussion_container{border:1px solid #060;margin:2px;}
+div.fil_discussion_entete{padding:0;}
+div.fil_discussion_entete_nouveau{background:#a00;}
+div.fil_discussion_entete_encours{background:#060;}
+div.fil_discussion_sans_indentation{margin-left:2px!important;}
+p.fil_discussion_minmax{color:#fff;padding:5px!important;float:left;}
+a.fil_discussion_ancre_minmax{color:#fff;text-decoration:none;}
+a.fil_discussion_ancre_minmax:hover{color:#c00!important;}
+a.fil_discussion_ancre_min{}
+a.fil_discussion_ancre_max{}
+p.fil_discussion_ancre{color:#fff;padding:5px!important;float:right;}
+p.fil_discussion_ancre a{margin-right:3px;}
+a.fil_discussion_ancre_lien{color:#fff;text-decoration:none;}
+a.fil_discussion_ancre_lien:hover{color:#c00!important;}
+
+/* Commentaire ***************************************************************/
+div.barre_outils_commentaire{background:#ccc;margin:0;padding:2px 3px;}
+p.barre_outils_commentaire_general {font-size:12px;float:right;}
+p.barre_outils_commentaire_connecte {font-size:12px;float:left;}
+a.icone_indenter_commentaires{font-size:18px;margin-left:18px;vertical-align:middle;color:#fff;text-decoration:none;}
+a.icone_indenter_commentaires:hover{color:#c00!important;}
+a.icone_repondre_commentaire{color:#333;text-decoration:none;}
+a.icone_repondre_commentaire:hover{color:#c00!important;}
+div.fil_discussion_commentaires{padding-bottom:3px;}
+div.texte_commentaire_container{background:#fafafa;border:1px solid #aaa;margin-top:3px;margin-right:2px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+p.texte_commentaire{font-size:14px;padding:6px;margin:0;word-wrap: break-word;}
+
+/* Réponse au commentaire ****************************************************/
+div.zone_reponse_commentaire{background:#ccc;padding:2px 9px 2px 3px;border:1px solid #aaa;margin-top:2px;margin-right:2px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+div.champ_reponse_container{margin-right:0;margin-top:2px;margin-bottom:2px;padding:0;}
+textarea.champ_reponse_commentaire{font-size:12px;margin:0!important;border:0!important;width:100%;max-width:100%;height:42px;padding:2px 3px;outline:0!important;line-height:1.2;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+button.valider_reponse_commentaire{font-size:11px;font-weight:bold;float:right;}
+button.annuler_reponse_commentaire{font-size:9px;float:left;}
+
+/* Survol du lien vers la partie discutée ************************************/
+div.p_box_survol_discussion_nouveau{background:#f66!important;color:#444!important;}
+div.p_box_survol_discussion{background:#9d9!important;color:#444!important;}
+
+/* Fin ***********************************************************************/

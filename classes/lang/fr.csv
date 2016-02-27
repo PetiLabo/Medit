@@ -1,0 +1,121 @@
+// Messages généraux
+retour_page_accueil;Retour vers la page d'accueil
+valider;Valider
+annuler;Annuler
+ok;OK
+
+// Panneau infos ////////////////////////////////////////////////////
+
+// Barre d'outils
+label_mode_edition;Edition
+label_mode_historique;Historique
+se_deconnecter;Se déconnecter
+se_connecter;Se connecter
+deconnecte;Déconnecté
+configuration;Configuration
+
+// Erreurs
+erreur_mode_non_autorise;Vous n'avez pas d'autorisation pour accéder à ce mode !
+
+// Panneau journal //////////////////////////////////////////////////
+titre_journal;Journal
+article_uniquement;Cet article seulement
+evenement_connexion;S'est connecté
+evenement_deconnexion;S'est déconnecté
+evenement_verrouillage_paragraphe;A verrouillé des paragraphes
+evenement_deverrouillage_paragraphe;A déverrouillé des paragraphes
+evenement_edition_paragraphe;A édité des paragraphes
+evenement_annotation_paragraphe;A annoté des paragraphes
+evenement_creation_fil_discussion;A créé un nouveau fil de discussion
+evenement_reponse_commentaire;A répondu à un commentaire
+
+// Panneau mots clés ////////////////////////////////////////////////
+titre_mots_cles;Mots clés
+
+// Panneau sommaire /////////////////////////////////////////////////
+titre_sommaire;Sommaire
+atteindre_entree_sommaire;Atteindre cette partie de l'article
+
+// Panneau commentaires /////////////////////////////////////////////
+titre_commentaires;Commentaires
+atteindre_zone_discussion;Atteindre la partie de l'article
+repondre_commentaire;Répondre à ce commentaire
+basculer_fil_discussion;Basculer l'affichage du fil de discussion
+basculer_indentation;Basculer l'indentation du fil de discussion
+alerte_fil_distance_nulle;Un fil de discussion traite déjà de cette sélection.
+alerte_fil_distance_negative;Un fil de discussion inclut déjà tout ou partie de la sélection.
+alerte_fil_distance_positive;Une partie de la sélection est déjà traitée dans un fil de discussion.
+
+// Messages d'erreur panneau commentaires
+erreur_connexion_insertion_commentaire;Erreur : Impossible d'insérer un commentaire hors connexion.
+erreur_liste_a_discuter_vide;Erreur : Aucun paragraphe sélectionné n'a pu être attaché à un fil de discussion.
+
+// Panneau article //////////////////////////////////////////////////
+pseudo_inconnu;Inconnu
+
+// Barre d'outils edition
+editer_texte;Editer l'article
+commenter_texte;Commenter l'article
+annoter_texte;Annoter l'article
+creer_nouvelle_version;Créer la version majeure
+creer_a_partir_de;sur la base de cette version mineure
+confirmer_nouvelle_version;Confirmez-vous la création de la nouvelle version majeure %1 sur la base de la version mineure %2 ?
+
+// Barre d'outils historique
+version;Version
+version_precedente;Version précédente
+version_suivante;Version suivante
+appliquer_filtre_version;Appliquer un filtre
+retirer_filtre_version;Retirer le filtre
+
+// Barre d'outils filtres
+tous_les_auteurs;Tous
+toutes_les_annotations;Toutes
+
+// Zone de saisie dans le panneau article
+titre_edition_contribution;Edition sous le verrou %1
+
+// Messages d'erreur panneau article
+erreur_connexion_edition_paragraphe;Veuillez vous connecter pour pouvoir éditer ce paragraphe.
+erreur_connexion_validation_contribution;Erreur : Impossible de valider cette contribution sous le verrou %1.
+erreur_verrouillage_paragraphe;Erreur : Impossible de verrouiller le paragraphe %1.
+erreur_composition_incoherente;Erreur : Composition incohérente sous le verrou %1.
+erreur_connexion_creation_version;Erreur : Impossible de créer une version hors connexion.
+
+// Panneau login ////////////////////////////////////////////////////
+titre_connexion;Connexion
+votre_identifiant;Votre identifiant
+votre_mot_de_passe;Votre mot de passe
+bouton_submit;Allez !
+message_erreur_connexion;Oups, identifiant ou mot de passe erroné...
+
+// Messages d'erreur BDD ////////////////////////////////////////////
+erreur_connexion_bdd;Erreur : Impossible de se connecter à la base de données (%1)
+erreur_requete_sans_bdd;Erreur : Impossible d'exécuter une requête sans connexion à la base de données (%1)
+erreur_execution_requete;Erreur : Echec lors de l'exécution de la requête SQL %1 : %2
+erreur_ouverture_session;Erreur : Impossible d'ouvrir une session.
+erreur_id_article_incorrect;Erreur : Identifiant de l'article incorrect.
+erreur_id_article_manquant;Erreur : Identifiant de l'article manquant.
+erreur_id_article_inexistant;Erreur : Impossible de trouver l'article %1 en base de données.
+erreur_no_version_incorrect;Erreur : Numéro de version incorrect.
+erreur_no_version_manquant;Erreur : Numéro de version manquant.
+erreur_version_article_inexistant;Erreur : Impossible de trouver la version %1 de l'article %2 en base de données.
+erreur_id_paragraphe_incorrect;Erreur : Identifiant du paragraphe incorrect.
+erreur_id_paragraphe_manquant;Erreur : Identifiant du paragraphe manquant.
+erreur_id_paragraphe_inexistant;Erreur : Impossible de trouver le paragraphe %1 en base de données.
+erreur_id_verrou_incorrect;Erreur : Identifiant du verrou incorrect.
+erreur_id_verrou_manquant;Erreur : Identifiant du verrou manquant.
+erreur_id_verrou_inexistant;Erreur : Impossible de trouver le verrou %1 en base de données.
+erreur_type_verrou_incorrect;Erreur : Impossible d'utiliser le type de verrou demandé.
+erreur_id_auteur_incorrect;Erreur : Identifiant de l'auteur incorrect.
+erreur_id_auteur_manquant;Erreur : Identifiant de l'auteur manquant.
+erreur_id_auteur_inexistant;Erreur : Impossible de trouver l'auteur %1 en base de données.
+erreur_id_profil_incorrect;Erreur : Identifiant du profil incorrect.
+erreur_id_profil_manquant;Erreur : Identifiant du profil manquant.
+erreur_id_profil_inexistant;Erreur : Impossible de trouver le profil %1 en base de données.
+erreur_id_fil_discussion_incorrect;Erreur : Identifiant du fil de discussion incorrect.
+erreur_id_fil_discussion_manquant;Erreur : Identifiant du fil de discussion manquant.
+erreur_id_fil_discussion_inexistant;Erreur : Impossible de trouver le fil de discussion %1 en base de données.
+erreur_id_commentaire_incorrect;Erreur : Identifiant du commentaire incorrect.
+erreur_id_commentaire_manquant;Erreur : Identifiant du commentaire manquant.
+erreur_id_commentaire_inexistant;Erreur : Impossible de trouver le commentaire %1 en base de données.

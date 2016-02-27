@@ -1,0 +1,46 @@
+/*
+ * CSS pour le style du texte pour medit
+ */
+
+body {font-family:Sans-serif;background:#fff;margin:0;padding:0;}
+p, h1, h2, h3, h5 {margin:0;padding:0;}
+
+/* Partie lecture et écriture réunies ****************************************/
+
+.p_box, .cke_editable{
+	font-family:Verdana,Georgia,Helvetica,Arial,Sans-serif;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+}
+.p_box p, .p_box h1, .p_box h2, .p_box h3, .p_box h5,
+.cke_editable p, .cke_editable h1, .cke_editable h2, .cke_editable h3, .cke_editable h5 {
+	line-height:1.5;
+	margin:0;
+	padding:5px 15px;
+}
+.p_box h1, .p_box h2, .p_box h3,
+.cke_editable h1, .cke_editable h2, .cke_editable h3 {
+	font-weight:bold;
+}
+.p_box h1, .cke_editable h1{
+	font-size:22px;
+}
+.p_box h2, .cke_editable h2{
+	font-size:18px;
+}
+.p_box h3, .cke_editable h3{
+	font-size:16px;
+}
+.p_box p.tag_liste_niveau_1, .cke_editable h5 {
+	font-weight:normal;font-size:14px;text-align:left;
+}
+.p_box p, .cke_editable p {
+	font-size:14px;text-align:justify;
+}
+
+.p_box p.tag_liste_niveau_1:before, .cke_editable h5:before{
+	font-size:16px;content:'\2022';padding-left:3px;padding-right:8px;color:#888;vertical-align:top;}
+}
+ 
+/* Fin ***********************************************************************/
